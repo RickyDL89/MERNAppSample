@@ -20,8 +20,11 @@ import { UserModule } from "./user/user.module";
 import { ProductModule } from "./product/product.module";
 import { CartModule } from "./cart/cart.module";
 import { CartItemModule } from "./cartItem/cartItem.module";
+import { VideoModule } from "./video/video.module";
 import { CartManagementModule } from "./CartManagement/cartmanagement.module";
+import { ExamplePagesModule } from "./ExamplePages/examplepages.module";
 import { SamplePagesModule } from "./SamplePages/samplepages.module";
+import { VideoManagementModule } from "./VideoManagement/videomanagement.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -48,8 +51,11 @@ import { AuthModule } from "./auth/auth.module";
     ProductModule,
     CartModule,
     CartItemModule,
+    VideoModule,
     CartManagementModule,
+    ExamplePagesModule,
     SamplePagesModule,
+    VideoManagementModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,

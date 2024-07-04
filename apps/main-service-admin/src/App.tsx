@@ -29,6 +29,10 @@ import { CartItemList } from "./cartItem/CartItemList";
 import { CartItemCreate } from "./cartItem/CartItemCreate";
 import { CartItemEdit } from "./cartItem/CartItemEdit";
 import { CartItemShow } from "./cartItem/CartItemShow";
+import { VideoList } from "./video/VideoList";
+import { VideoCreate } from "./video/VideoCreate";
+import { VideoEdit } from "./video/VideoEdit";
+import { VideoShow } from "./video/VideoShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -96,6 +100,13 @@ const App = (): React.ReactElement => {
           edit={CartItemEdit}
           create={CartItemCreate}
           show={CartItemShow}
+        />
+        <Resource
+          name="Video"
+          list={VideoList}
+          edit={VideoEdit}
+          create={VideoCreate}
+          show={VideoShow}
         />
       </Admin>
     </div>
