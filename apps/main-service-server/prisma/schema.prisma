@@ -72,3 +72,12 @@ model CartItem {
   reservedAt DateTime?
   updatedAt  DateTime  @updatedAt
 }
+
+model Video {
+  createdAt   DateTime @default(now())
+  description String?
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String?
+  updatedAt   DateTime @updatedAt
+  url         String?
+}
