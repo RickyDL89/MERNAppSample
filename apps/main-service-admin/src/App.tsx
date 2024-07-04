@@ -29,7 +29,7 @@ import { CartItemList } from "./cartItem/CartItemList";
 import { CartItemCreate } from "./cartItem/CartItemCreate";
 import { CartItemEdit } from "./cartItem/CartItemEdit";
 import { CartItemShow } from "./cartItem/CartItemShow";
-import { httpAuthProvider } from "./auth-provider/ra-auth-http";
+import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
   const [dataProvider, setDataProvider] = useState<DataProvider | null>(null);
@@ -50,7 +50,7 @@ const App = (): React.ReactElement => {
       <Admin
         title={"MainService"}
         dataProvider={dataProvider}
-        authProvider={httpAuthProvider}
+        authProvider={jwtAuthProvider}
         theme={theme}
         dashboard={Dashboard}
         loginPage={Login}
